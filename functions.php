@@ -38,8 +38,17 @@ function exauto_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
+	
+	
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+	
 	add_theme_support( 'post-thumbnails' );
 
+	
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'exauto' ),
@@ -148,3 +157,23 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+// function custom_excerpt_length( $length ) {
+// 	return 100;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// 
+// 
+// add_theme_support( 'post-thumbnails' );
+// 
+// 
+// 
+//   
+// 
+// function new_excerpt_more( $more ) {
+// 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Contnue Reading', 'your-text-domain' ) . '</a>';
+// }
+// add_filter( 'excerpt_more', 'new_excerpt_more' );
+// 
