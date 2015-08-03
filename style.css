@@ -312,17 +312,19 @@ h2.entry-title a:hover{
 	color:#7F7F7F;	
 }
 /* the code h2-h6 control the css for all headings. h1 was excluded because it is already being controlled below */
-h1{
-text-decoration: none;
-}
+
 
 
 h2{
 	font-size:20px;
 	text-align:center;
+	text-shadow: 3px 2px #444444;
+	color:#A8A8A8;
 }
 h3{
 	font-size:18px;
+	text-shadow: 3px 2px #444444;
+	color:#A8A8A8;
 }
 h4{
 	font-size:16px;
@@ -405,7 +407,7 @@ html {
 }
 
 body {
-	background: pink; /* Fallback for when there is no custom background color defined. */
+	background: #B0B0B0 ; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before{
@@ -582,8 +584,9 @@ textarea {
 
  font-size: 28px;
  opacity: 5px; 
- text-shadow: 1px 1px #000080;
+ text-shadow: 2px 2px #444444;
  text-decoration: none;
+ color:#6a6a6a;
 }
 
 /*--------------------------------------------------------------
@@ -592,15 +595,17 @@ textarea {
 a {
 	color: royalblue;
 }
-
+/* This code also controls the main header */
 a:visited {
-	color: purple;
+	color: #C0C0C0;
+	text-decoration: none;
+ 
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #444444;
 }
 
 a:focus {
@@ -658,12 +663,13 @@ font-size:12px;
 .entry-title{
 text-align:center;
 font-size:20px;
+color:#A8A8A8;
 }
-
+/* the code below controls the styling for content in each post when the posts has been clicked */
 .entry-content{
 padding:2px 6px;
 	border-radius: 40px;
-	color:pink;
+	color:#6a6a6a;
 }
 
 /*--------------------------------------------------------------
@@ -671,7 +677,7 @@ padding:2px 6px;
 --------------------------------------------------------------*/
 /* This code controls  the design of the top bar that contains the top menu */
 #site-navigation{
-	background-color:#444444;
+	background-color:#B0B0B0 ;
 	line-height:20px;
 	min-height: 20px;
 	width:100%;
@@ -717,7 +723,7 @@ padding:2px 6px;
 }
 
 .main-navigation a {
-	color: pink;
+	color: #6a6a6a;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 13px;
@@ -729,7 +735,7 @@ padding:2px 6px;
 	border-radius: 40px;
 	font-style:normal;
 	opacity: 5px; 
-	text-shadow: 1px 1px #000080;
+	text-shadow: 1px 1px #444444;
 	
 	
 }
@@ -800,7 +806,7 @@ padding:2px 6px;
 	display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
 /* 
 The code below brings out the menu as a dropdown menu when viewing from a particular device	
 	
@@ -975,11 +981,12 @@ background:#c9c;
 
 /* This code controls the padding and margin around each post */
 .hentry {
-	background-color: grey;
-	 margin-top: 1em;
+	background-color:#C0C0C0;
+	margin-top: 1em;
     margin-bottom: 1em;
-    border-radius: 2.5em;padding: 1px 2px 1px 2px;
-    margin: 0em;
+    border-radius: 7em;
+    padding: 7px 5px 7px 5px;
+    margin: 1em;
 }
 
 .byline,
@@ -1168,3 +1175,6 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+

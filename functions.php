@@ -167,6 +167,7 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 
+
 function custom_excerpt_length( $length ) {
 	return 20;
 }
@@ -184,4 +185,5 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-?>
+
+

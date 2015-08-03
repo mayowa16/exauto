@@ -37,7 +37,7 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', get_post_format() );?>
 
 				
- <a href="<?php echo get_permalink(); ?>"> Read More...</a>
+
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
