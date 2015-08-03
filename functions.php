@@ -5,6 +5,9 @@
  * @package exauto
  */
 
+
+
+
 if ( ! function_exists( 'exauto_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -38,6 +41,8 @@ function exauto_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
+
+ 
 
  
 	add_theme_support( 'post-thumbnails' );
@@ -162,13 +167,21 @@ require get_template_directory() . '/inc/jetpack.php';
 
 
 
- 
-
-
-  
-
 function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+add_theme_support( 'post-thumbnails' );
+
+
+
+  
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Contnue Reading', 'your-text-domain' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+?>
