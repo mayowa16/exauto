@@ -310,12 +310,14 @@ h1.entry-title a:hover,
 h2.entry-title a:hover{
 	color:#7F7F7F;	
 }
-
+/* the code h2-h6 control the css for all headings. h1 was excluded because it is already being controlled below */
 h1{
-	font-size:22px;
+text-decoration: none;
 }
+
+
 h2{
-	font-size:15px;
+	font-size:20px;
 	text-align:center;
 }
 h3{
@@ -558,6 +560,7 @@ textarea {
 	height:auto;
 		
 }
+/* this code controls the design for the tagline */
 .site-branding{
 	margin:75px auto 0; 
 	padding:25px 0;
@@ -570,10 +573,14 @@ textarea {
     margin: 0;
     padding: 0;
 }
+/* this code controls the design for the main title */
 .site-title
 {
 
  font-size: 28px;
+ opacity: 5px; 
+ text-shadow: 1px 1px #000080;
+ text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -626,6 +633,25 @@ layout
 }
 #main{
 	padding-top:30px;
+}
+
+/* the two codes below control the css for the descriptions for each posts */
+
+.entry-meta{
+text-align:center;
+font-style:italic;
+
+}
+
+.entry-footer{
+text-align:center;
+font-style:italic;
+}
+
+/* the code below controls the styling for the title each post when the posts has been clicked */
+.entry-title{
+text-align:center;
+font-size:20px;
 }
 
 /*--------------------------------------------------------------
@@ -687,8 +713,11 @@ layout
     text-decoration: none;
     text-transform: uppercase;
     padding:2px 6px;
-	border-radius: 7px;
-	font-style:italic;
+	border-radius: 40px;
+	font-style:normal;
+	opacity: 5px; 
+	text-shadow: 1px 1px #000080;
+	
 	
 }
 
@@ -703,11 +732,14 @@ layout
 		top: 30px;
 		left: 0;
 	z-index: 99999;
+	padding:2px 6px;
+	border-radius: 40px;
 }
 
 .main-navigation ul ul ul {
 	left: 100%;
 	top: 0;
+	
 }
 
 .main-navigation ul ul a {
@@ -715,6 +747,7 @@ layout
     padding: 10px;
     text-align: left;
     width: 200px;
+    
 }
 
 }
@@ -743,6 +776,8 @@ layout
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
 }
+
+
 
 
 
