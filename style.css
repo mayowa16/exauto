@@ -794,13 +794,13 @@ font-size:20px;
 The code below brings out the menu as a dropdown menu when viewing from a particular device	
 	
  */
+ 
+ 
 	.menu-toggle {
 		display: block;
 	}
 	.main-navigation ul {
 		display: none;
-		text-align:center;
-		
 	}
 	.main-navigation.toggled ul {
 	display: block;
@@ -829,23 +829,16 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
 	width: 50%;
 
 }
-
-#site-navigation{
-	background-color:#444444;
-	line-height:30px;
-	min-height: 30px;
-	width:100%;
-	z-index: 9;
-	text-align:center;
-	margin-top:1px;
-	margin-bottom:1px;
-	
-}
 .container{
 	background: none repeat scroll 0 0 transparent;
     margin: 0 auto;
-	width:960px;
+	width:100%;
 	text-align:center;
+}
+#primary{
+	margin:auto;
+	padding: 0;
+    width: 100%;
 }
 
 }
