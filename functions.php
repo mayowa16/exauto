@@ -45,7 +45,7 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-	
+
 	add_theme_support( 'post-thumbnails' );
 
 	
@@ -114,6 +114,8 @@ function exauto_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+
 }
 add_action( 'widgets_init', 'exauto_widgets_init' );
 
@@ -130,7 +132,11 @@ function exauto_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+
 }
+
+
 add_action( 'wp_enqueue_scripts', 'exauto_scripts' );
 
 /**
@@ -176,4 +182,4 @@ require get_template_directory() . '/inc/jetpack.php';
 // 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Contnue Reading', 'your-text-domain' ) . '</a>';
 // }
 // add_filter( 'excerpt_more', 'new_excerpt_more' );
-// 
+
