@@ -555,18 +555,8 @@ textarea {
 --------------------------------------------------------------*/
 #masthead{
 	height:auto;
-	
 		
 }
-
-#site-navigation{
-	background-color:#444444;
-	
-	position: fixed;
-	width:100%;
-	z-index: 9;
-}
-
 .site-branding{
 	margin:75px auto 0; 
 	padding:25px 0;
@@ -636,10 +626,14 @@ layout
 --------------------------------------------------------------*/
 #site-navigation{
 	background-color:#444444;
-	
-	position: fixed;
+	line-height:30px;
+	min-height: 30px;
 	width:100%;
 	z-index: 9;
+	text-align:center;
+	margin-top:1px;
+	margin-bottom:1px;
+	
 }
 .main-navigation .menu {
     display: block;
@@ -649,6 +643,7 @@ layout
     width:100%;
     line-height:20px;
 	min-height: 20px;
+	
 }
 
 
