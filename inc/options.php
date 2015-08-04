@@ -71,6 +71,7 @@ function cd_settings_init() {
 	);
 	
 	
+
 	
 	function cd_text_field_render() { 
 		$options = get_option( 'cd_options_settings' );
