@@ -62,7 +62,7 @@ $titlelength = 15; // Length of the post titles shown below the thumbnails
 $args=array (
 	'post_type' => 'post',
 	'posts_per_page' => 7,
-	'cat'=>  39
+	'cat'=>  192
 	);
 $the_query = new WP_Query($args);
 // The Loop
@@ -125,5 +125,5 @@ wp_reset_postdata();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>

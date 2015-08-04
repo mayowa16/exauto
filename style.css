@@ -1087,6 +1087,20 @@ text-align:center;
    max-height: 0;
    border: none;
    border-top: 30px solid #aaaaaa;
+   border-bottom: 33px solid #ffffff;
+   margin-top: 5px;
+}
+
+.her{ 
+    display: block;
+   position: absolute;
+   padding: 0px;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   border: none;
+   border-top: 10px solid #aaaaaa;
    border-bottom: 65px solid #ffffff;
    margin-top: 5px;
 }
@@ -1232,5 +1246,8 @@ height:40px;
 }
 
 .move{
-float:center;
+float:right;
+}
+.hello{
+float:right;
 }

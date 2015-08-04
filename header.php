@@ -29,6 +29,10 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exauto' ); ?></a>
 
+<div class="hello">
+<?php dynamic_sidebar('Sidebar'); ?>
+</div>
+
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exauto' ); ?></button>
@@ -51,3 +55,4 @@
 </div>
 
 	<div id="content" class="site-content">
+	
