@@ -54,7 +54,7 @@ the_content('display');
 	?>
 
 <?php
-// Grid Parameters
+// this code below shows the posts under the brand new category, we decided to display this because we felt that the our clients customers would be more interested in the new exotic cars compared to the used
 $counter = 1; // Start the counter
 $grids = 7; // Grids per row
 $titlelength = 15; // Length of the post titles shown below the thumbnails
@@ -92,20 +92,7 @@ if($counter != $grids) :
 // Show the right hand side column
 elseif($counter == $grids) :
 ?>
-<!-- 
-<div class="griditemright">
-	<div class="postimage">
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
-	</div><!~~ .postimage ~~>
-	<h2 class="postimage-title">
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php if (mb_strlen($post->post_title) > $titlelength)
-			{ echo mb_substr(the_title($before = '', $after = '', FALSE), 0, $titlelength) . ' ...'; }
-		else { the_title(); } ?>
-		</a>
-	</h2>
-</div><!~~ .griditemright ~~>
- -->
+
 
 <div class="clear"></div>
 <?php

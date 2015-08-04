@@ -1204,6 +1204,7 @@ text-align:center;
 	display: block;
 }
 
+/* this is the code that will control the grid layout */
 
 .gridcontainer h2 a{
 color: #333; 
@@ -1218,18 +1219,7 @@ margin: 0 30px 20px 0;
 height:250px;
 text-align: center;
 
-
-
 }
-/* 
-.gridcontainer .griditemright{
-float:right; 
-width: 150px;
-margin: 0 30px 20px 0;
-
-}
- */
-
 
 .gridcontainer .postimage{
 margin: 0 0 5px 0;
@@ -1237,7 +1227,7 @@ margin: 0 0 5px 0;
 }
 .gridcontainer .postimage-title {
 text-align: center;
-width:30px;
+height:40px;
 
 }
 
