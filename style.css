@@ -686,6 +686,7 @@ padding:2px 6px;
 	margin-top:1px;
 	margin-bottom:1px;
 	
+	
 }
 .main-navigation .menu {
     display: block;
@@ -695,7 +696,7 @@ padding:2px 6px;
     width:100%;
     line-height:30px;
 	min-height: 30px;
-	
+
 }
 
 
@@ -713,13 +714,17 @@ padding:2px 6px;
     padding-left: 0;
     text-align: center;
     width: auto;
+    	
+	
 }
+
 
 .main-navigation li {
 	float: left;
 	padding:0 8px;
 	position: relative;
 	text-align:center;
+	
 }
 
 .main-navigation a {
@@ -767,6 +772,7 @@ padding:2px 6px;
     text-align: left;
     width: 200px;
     
+    
 }
 
 }
@@ -779,6 +785,7 @@ padding:2px 6px;
     padding: 10px;
     text-align: left;
     width: 200px;
+    
 }
 .main-navigation ul ul li {
 }
@@ -829,6 +836,7 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
+	
 }
 
 .comment-navigation .nav-previous,
@@ -836,6 +844,7 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
 .post-navigation .nav-previous {
 	float: left;
 	width: 50%;
+	
 }
 
 .comment-navigation .nav-next,
@@ -844,8 +853,10 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
 	float: right;
 	text-align: right;
 	width: 50%;
-
+	
 }
+
+
 /* the container and primary code will ensure that the site does not move around horizontally but only vertically. */
 
 .container{
@@ -853,14 +864,15 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
     margin: 0 auto;
 	width:100%;
 	text-align:center;
+	
 }
 #primary{
 	margin:auto;
 	padding: 0;
     width: 100%;
 }
-
 }
+	
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1061,7 +1073,23 @@ iframe,
 object {
 	max-width: 100%;
 }
+.car{
+text-align:center;
+}
 
+.hr { 
+    display: block;
+   position: absolute;
+   padding: 0px;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   border: none;
+   border-top: 30px solid #aaaaaa;
+   border-bottom: 65px solid #ffffff;
+   margin-top: 5px;
+}
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/

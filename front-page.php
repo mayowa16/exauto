@@ -7,33 +7,9 @@
 
 
 get_header(); ?>
-
-<section id="featured-slider">
-	<div id="slides">
-		<div class="slides_container">
-			
-			<?php 
-				$loop = new WP_Query(array('post_type' => 'feature', 'posts_per_page' => -1, 'orderby'=> 'ASC')); 
-			?>
-			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-				<div class="slide">
-					<?php $url = get_post_meta($post->ID, "url", true);
-					if($url!='') { 
-						echo '<a href="'.$url.'">';
-						echo the_post_thumbnail('full');
-						echo '</a>';
-					} else {
-						echo the_post_thumbnail('full');
-					} ?>
-					<div class="caption">
-						<h5><?php the_title(); ?></h5>	
-						<?php the_content();?>
-					</div>
-				</div>
-
-			<?php endwhile; ?>
-			
+<div class="car">
+<img src="<?php echo get_bloginfo('template_url') ?>/images/ferrari.jpg" style="width:800px;height:400px;"/>
+</div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

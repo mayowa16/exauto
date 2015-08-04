@@ -9,6 +9,8 @@
 
 ?><!DOCTYPE html>
 <html 
+
+
 <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -19,8 +21,9 @@
 <?php wp_head(); ?>
 
 
-
 </head>
+
+<div class="hr">
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
@@ -45,5 +48,6 @@
 
 	
 	</header><!-- #masthead -->
+</div>
 
 	<div id="content" class="site-content">
