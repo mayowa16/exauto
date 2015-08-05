@@ -14,13 +14,13 @@ get_header(); ?>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/cool.jpg" style="width:650px;height:400px;"/>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/ferrari.jpg" style="width:650px;height:400px;"/>
  -->
-<img src="<?php echo get_bloginfo('template_url') ?>/images/1.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/2.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/3.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/4.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/5.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/6.jpg" style="width:650px;height:400px;"/>
-<img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:800px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/1.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/2.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/3.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/4.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/5.jpg"style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/6.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:500px;height:350px"/>
 <!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/ex.jpg" style="width:800px;height:400px;"/> -->
 
 
@@ -85,7 +85,7 @@ $titlelength = 15; // Length of the post titles shown below the thumbnails
 $args=array (
 	'post_type' => 'post',
 	'posts_per_page' => 7,
-	'cat'=> 39
+	'cat'=> 192
 	);
 $the_query = new WP_Query($args);
 // The Loop

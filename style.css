@@ -589,7 +589,7 @@ textarea {
  text-shadow: 1px 1px #444444;
  text-decoration: none;
  color:#6a6a6a;
- font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+ font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
 }
 
 /*--------------------------------------------------------------
@@ -1317,5 +1317,5 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 15s slidy infinite; 
+  animation: 10s slidy infinite; 
 }
