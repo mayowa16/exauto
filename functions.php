@@ -168,6 +168,8 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_stylesheet_directory() . '/inc/options.php';
 
 
+
+
 function custom_excerpt_length( $length ) {
 	return 20;
 }

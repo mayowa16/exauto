@@ -318,9 +318,10 @@ h2.entry-title a:hover{
 h2{
 	font-size:20px;
 	text-align:center;
-	text-shadow: 2px 2px #444444;
+	text-shadow: 1px 1px #A8A8A8;
 	color:#444444;
 	font-family:Impact, Charcoal, sans-serif;
+	letter-spacing: 0.6px;
 }
 h3{
 	font-size:18px;
@@ -599,7 +600,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #505050 ;
 }
 /* This code also controls the main header as well */
 a:visited {
@@ -1363,5 +1364,6 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 10s slidy infinite; 
+  z-index:1000;
   
 }
