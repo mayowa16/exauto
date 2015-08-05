@@ -813,7 +813,9 @@ padding:2px 6px;
 .main-navigation li.current-menu-item a {
 }
 
-
+.car{
+display:none;
+}
 
 
 
@@ -881,7 +883,29 @@ The code below brings out the menu as a dropdown menu when viewing from a partic
 	padding: 0;
     width: 100%;
 }
+
+/* The code below stops the slider from being viewed on certain devices. */
+
+
+
+div#slider {
+display:none;
 }
+
+div#slider figure img { 
+display: none;
+ 
+ }
+div#slider figure { 
+display:none;
+}
+.car{
+display:block;
+}
+
+
+}
+	
 	
 
 /*--------------------------------------------------------------
@@ -1228,7 +1252,7 @@ font-family:Georgia, serif;
 text-shadow: 1px 1px #444444;
 }
 .gridcontainer .griditemleft{
-float: left; 
+float:center; 
 width: 200px; 
 margin: 0 30px 20px 0;
 height:250px;
@@ -1236,7 +1260,17 @@ text-align: center;
 padding:4px;
 
 }
+ 
+.gridcontainer .griditemright{
+float:left; 
+width: 200px; 
+margin: 0 30px 20px 0;
+height:250px;
+text-align: center;
+padding:4px;
 
+}
+ 
 .gridcontainer .postimage{
 margin: 0 0 5px 0;
 padding:15px;
@@ -1248,9 +1282,18 @@ height:40px;
 
 }
 
+/* THis code controls the position of the images underneath the slider */
 .move{
-float:right;
+float:left;
+text-align: center;
+margin-left: 150px;
+
+    
+   
 }
+/* 
+this code controls the position of the search bar the the top of the page
+ */
 .hello{
 float:right;
 }
