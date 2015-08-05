@@ -24,14 +24,14 @@
 </head>
 
 <div class="hr">
+<div class="hello">
+<?php dynamic_sidebar('Sidebar'); ?>
+</div>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exauto' ); ?></a>
 
-<div class="hello">
-<?php dynamic_sidebar('Sidebar'); ?>
-</div>
 
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">

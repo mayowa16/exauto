@@ -7,13 +7,36 @@
 
 
 get_header(); ?>
-<div class="gridcontainer">
 
-<div class="car">
+<div id="slider">
+<figure>
+<!-- 
+<img src="<?php echo get_bloginfo('template_url') ?>/images/cool.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/ferrari.jpg" style="width:650px;height:400px;"/>
+ -->
+<img src="<?php echo get_bloginfo('template_url') ?>/images/1.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/2.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/3.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/4.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/5.jpg" style="width:650px;height:400px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/6.jpg" style="width:650px;height:400px;"/>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:800px;height:400px;"/>
+<!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/ex.jpg" style="width:800px;height:400px;"/> -->
+
+
+</figure>
 </div>
 
+ 
+<div class="car">
+<!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:800px;height:400px;"/> -->
+</div>
 
+ 
+ 
+
+
+<div class="gridcontainer">
 
 
 
@@ -62,7 +85,7 @@ $titlelength = 15; // Length of the post titles shown below the thumbnails
 $args=array (
 	'post_type' => 'post',
 	'posts_per_page' => 7,
-	'cat'=>  192
+	'cat'=> 39
 	);
 $the_query = new WP_Query($args);
 // The Loop
@@ -124,6 +147,7 @@ wp_reset_postdata();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php // get_sidebar(); ?>
+
 <?php get_footer(); ?>
+
