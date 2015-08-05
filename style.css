@@ -1294,6 +1294,7 @@ color: #6a6a6a;
 
 
 @keyframes slidy {
+
 0% { left: 0%; }
 20% { left: 0%; }
 25% { left: -100%; }
@@ -1318,4 +1319,8 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 10s slidy infinite; 
+  
+}
+owl-carousel .owl-wrapper-outer{
+ z-index:+1.0;
 }

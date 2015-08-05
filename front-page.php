@@ -21,6 +21,10 @@ get_header(); ?>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/5.jpg"style="width:500px;height:350px;"/>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/6.jpg" style="width:500px;height:350px;"/>
 <img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:500px;height:350px"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/7.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/8.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/9.jpg" style="width:500px;height:350px;"/>
+<img src="<?php echo get_bloginfo('template_url') ?>/images/10.jpg" style="width:500px;height:350px;"/>
 <!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/ex.jpg" style="width:800px;height:400px;"/> -->
 
 
