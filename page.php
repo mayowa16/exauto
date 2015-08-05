@@ -31,5 +31,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!-- I have commented the sidebar because i already called out in the header -->
+
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -581,6 +581,7 @@ textarea {
     text-decoration: none;
 }
 /* this code controls the design for the main title */
+
 .site-title
 {
 
@@ -592,19 +593,24 @@ textarea {
  font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
 }
 
+
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
 	color: royalblue;
 }
-/* This code also controls the main header */
+/* This code also controls the main header as well */
 a:visited {
 	color: #C0C0C0;
 	text-decoration: none;
  
 }
 
+/* 
+The codes below control the color of the links throughout the page
+ */
 a:hover,
 a:focus,
 a:active {
@@ -622,8 +628,9 @@ a:active {
 
 /* 
 
-layout
+layout:this controls the layout and moves all the content to the middle of the page
  */
+
 
 .container{
 	background: none repeat scroll 0 0 transparent;
@@ -999,7 +1006,7 @@ background:#c9c;
 	background-color:#C0C0C0;
 	margin-top: 1em;
     margin-bottom: 1em;
-    border-radius: 7em;
+    border-radius: 5em;
     padding: 7px 5px 7px 5px;
     margin: 2em;
 }
@@ -1076,9 +1083,9 @@ iframe,
 object {
 	max-width: 100%;
 }
-.car{
-text-align:center;
-}
+
+
+/* The code below contols the white line going across the page */
 
 .hr { 
     display: block;
@@ -1094,19 +1101,7 @@ text-align:center;
    margin-top: 5px;
 }
 
-.her{ 
-    display: block;
-   position: absolute;
-   padding: 0px;
-   margin: 8px auto;
-   height: 0;
-   width: 100%;
-   max-height: 0;
-   border: none;
-   border-top: 10px solid #aaaaaa;
-   border-bottom: 65px solid #ffffff;
-   margin-top: 5px;
-}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -1129,7 +1124,7 @@ text-align:center;
 }
 
 
-/* footer */
+/* footer:all the code below controls the footer */
 
 #colophon{
 	background-color:#444444;
@@ -1142,10 +1137,12 @@ text-align:center;
 #colophon a:hover{
 	color:#919393;
 }
+/* THis code controls the placing of the credits below */
  .site-info {
     clear: both;
     margin: auto;
     padding-top:30px; 
+    float:right;
 }
 #footer-widgets {
     height: auto;
@@ -1156,11 +1153,11 @@ text-align:center;
 }
 .site-footer{
 	border-top:1px solid #C3C3C3; 
-	font-size:12px;
+	font-size:15px;
 	padding-top:30px; 
 }
 .copyright{
-	float:left;
+	float:right;
 	width:45%;
 }
 .credits{
@@ -1258,6 +1255,7 @@ float:right;
 float:right;
 }
 
+/* the two codes below control the olderposts and newerposts texts */
 .nav-previous{
 color: #6a6a6a;
     display: block;
@@ -1292,6 +1290,9 @@ color: #6a6a6a;
 	text-shadow: 2px 2px #444444;
 }
 
+/* 
+the code below controls the movement of the slider on the homepage
+ */
 
 @keyframes slidy {
 
@@ -1320,7 +1321,4 @@ div#slider figure {
   font-size: 0;
   animation: 10s slidy infinite; 
   
-}
-owl-carousel .owl-wrapper-outer{
- z-index:+1.0;
 }
