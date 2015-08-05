@@ -318,7 +318,7 @@ h2.entry-title a:hover{
 h2{
 	font-size:20px;
 	text-align:center;
-	text-shadow: 1px 1px #A8A8A8;
+	text-shadow: 3px 2px #444444;
 	color:#444444;
 	font-family:Impact, Charcoal, sans-serif;
 	letter-spacing: 0.6px;
@@ -674,7 +674,7 @@ font-size:12px;
 .entry-title{
 text-align:center;
 font-size:20px;
-color:#A8A8A8;
+color:#444444;
 }
 /* the code below controls the styling for content in each post when the posts has been clicked */
 .entry-content{
@@ -1349,6 +1349,7 @@ the code below controls the movement of the slider on the homepage
 75% { left: -300%; }
 95% { left: -300%; }
 100% { left: -400%; }
+
 }
 
 body {
@@ -1363,7 +1364,26 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 10s slidy infinite; 
-  z-index:1000;
+  -webkit-animation: 10s slidy infinite; 
   
+  -webkit-animation-name: slidy;
+-webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: initial;
+    -webkit-animation-delay: initial;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: initial;
+    -webkit-animation-fill-mode: initial;
+    -webkit-animation-play-state: initial;
+    -webkit-animation: 10s slidy infinite; 
+  
+ -moz-animation-name: slidy;
+-moz-animation-duration: 10s;
+   -moz-animation-timing-function: initial;
+    -moz-animation-delay: initial;
+    -moz-animation-iteration-count: infinite;
+   -moz-animation-direction: initial;
+   -moz-animation-fill-mode: initial;
+    -moz-animation-play-state: initial;
+
+  }
 }

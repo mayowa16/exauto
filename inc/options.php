@@ -110,8 +110,8 @@ function cd_settings_init() {
 		$options = get_option( 'cd_options_settings' );
 		?>
 		<select name="cd_options_settings[cd_select_field]">
-			<option value="1" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Option 2</option>
+			<option value="Exotic Automobile is the best dealership you can find today" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Select 1</option>
+			<option value="This is where to find cheap quality automobiles " <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Select 2</option>
 		</select>
 	<?php
 	}
