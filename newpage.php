@@ -16,8 +16,6 @@ get_header(); ?>
 $text=get_option('cd_options_settings');
 echo $text['cd_text_field'];
 echo '<br />';
-
-
 echo $text['cd_select_field'];
 echo '<br />';
 echo $text['cd_textarea_field'];

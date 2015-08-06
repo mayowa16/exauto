@@ -1,6 +1,6 @@
 <?php
 	
-	// My Awesome Options Page
+	// My Super Options Page
 	
 function cd_add_submenu() {
 	add_submenu_page( 'options-general.php', 'Submenu', 'Submenu', 'manage_options', 'awesome-sub-menu', 'cd_display_submenu_options');
