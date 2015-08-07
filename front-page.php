@@ -37,19 +37,25 @@ All images used in the website and in the slider are all in the public domain
 
 </figure>
 </div>
+<div id="front">
+<?php wpb_display_testimonials(); ?>
+</div>
 
-<!-- This  (image that has company logo) will be the only  thing to appear when viewed on particular devices. the slider will not appear so as not to be confusing -->
-<div class="car">
+
+<!-- 
+
+This  (image that has company logo) will be the only  thing to appear when viewed on particular devices. the slider will not appear so as not to be confusing<div class="car">
 <img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:500px;height:400px;"/>
 </div>
  
- 
+ --> 
 
 
 <div class="gridcontainer">
 
 
 
+ -->
 
 <!-- 
 <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -88,14 +94,14 @@ the_content('display');
 
 <?php
 // this code below shows the posts under the brand new category, we decided to display this because we felt that the our clients customers would be more interested in the new exotic cars compared to the used
-$counter = 3; // Start the counter
-$grids = 8; // Grids per row
+$counter = 4; // Start the counter
+$grids = 4; // Grids per row
 $titlelength = 15; // Length of the post titles shown below the thumbnails
 // The Query
 $args=array (
 	'post_type' => 'post',
-	'posts_per_page' => 8,
-	'cat'=> 192
+	'posts_per_page' => 4,
+	'cat'=> 39
 	);
 $the_query = new WP_Query($args);
 // The Loop
@@ -109,7 +115,7 @@ if($counter != $grids) :
 <div class="griditemleft">
 	<div class="postimage">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
-	</div><!-- .postimage -->
+	</div><!~~ .postimage ~~>
 	<h2 class="postimage-title">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 		<?php if (mb_strlen($post->post_title) > $titlelength)
@@ -117,7 +123,7 @@ if($counter != $grids) :
 		else { the_title(); } ?>
 		</a>
 	</h2>
-</div><!-- .griditemleft -->
+</div><!~~ .griditemleft ~~>
 </div>
 
 <?php
@@ -152,8 +158,9 @@ endwhile;
 wp_reset_postdata();
 ?>
 
-</div><!-- .gridcontainer -->
+</div><!~~ .gridcontainer ~~>
 </div>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

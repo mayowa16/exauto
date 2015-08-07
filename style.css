@@ -1386,4 +1386,74 @@ div#slider figure {
     -moz-animation-play-state: initial;
 
   }
+
+
+#testimonials{
+ /* 
+width: 300px;
+    padding: 2px;
+    border: 2px solid;
+    margin: 25px;
+    height:300px;
+     color:#6a6a6a;
+     background-color:white;
+     text-align:center:
+ */
+     overflow:hidden;
+}
+#testimonials .slide
+{
+  color:#6a6a6a;
+}
+#testimonials .client-contact-info{
+margin: 25px 0 0 0; 
+float: left;
+  color:#6a6a6a;
+}
+#testimonials .testimonial-quote{
+color: pink;
+padding: 3px 0 0 65px; 
+line-height: 1.5em; 
+font-family: "proxima-nova-1", "proxima-nova-2", Helvetica, Arial, sans-serif !important; 
+font-size: 16px;
+font-weight: normal; 
+font-style: italic; 
+margin: 10px 0 20px 0;
+  color:#6a6a6a;
+  
+}
+/* 
+#testimonials .img
+{
+  color:#6a6a6a;
+  max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+ */
+
+/* 
+#display{
+overflow:hidden;
+}
+ */
+     
+    
+ #front{
+ width: 300px;
+    padding: 2px;
+    border: 2px ;
+    margin: 20px;
+    height:300px;
+     color:#6a6a6a;
+     background-color:#C0C0C0;
+    overflow:hidden;
+    box-sizing: border-box;
+    position:relative;
+    float:center;
+    border-radius:10px;
+    
+     }
+
 }
