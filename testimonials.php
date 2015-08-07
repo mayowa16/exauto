@@ -3,12 +3,12 @@
 Plugin Name:Exotic auto Testimonials
 Version: 0.1
 Plugin URI: http://www.codiva.com/
-Description: Rotating Testimonials is a plugin that lets you add rotating testimonials in WordPress
+Description:  Testimonials is a plugin that lets you add  testimonials in WordPress
 Author: Mayowa
 Author URI: phoenix.sheridanc.on.ca/~ccit2717/
 */
 
-
+// the code below creates a custom post type for testimonials. this is the second enhanced customization for our front page
 add_action( 'init', 'wpb_register_cpt_testimonial' );
 
 function wpb_register_cpt_testimonial() {
@@ -126,7 +126,7 @@ update_post_meta( $post_id, $key, $data );
 add_action( 'admin_menu', 'wpb_create_meta_box' );
 add_action( 'save_post', 'wpb_save_meta_box' );
 
-
+// the code below is for customization of a slider and it requires extra java script for it to work. we did not take the extra step becuase we already have a slider therefore having another might make the front page to busy
 
 function wpb_display_testimonials() { ?>
 <script language="javascript"> 
