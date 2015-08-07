@@ -46,6 +46,8 @@ All images used in the website and in the slider are all in the public domain
  
 
 
+<!-- This grid below displays some of the new cars we have for sale. we included this not as part of the enhanced customization for our front page but becuase we thought it was important for our customers becuase we pride our selves on providing brand new and cheap automobiles -->
+
 <div class="gridcontainer">
 
 
@@ -142,7 +144,9 @@ wp_reset_postdata();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+
 <div class="show">		
+
 <div class="clients">
 
 <a :hover  href="http://phoenix.sheridanc.on.ca/~ccit2721/?page_id=1621">
@@ -151,7 +155,7 @@ wp_reset_postdata();
 </div>
 </div>
 
-
+<!-- the code below calls the testimonial plugin to be displayed on the websites front page -->
 <div id="front">
 
 <?php wpb_display_testimonials(); ?>

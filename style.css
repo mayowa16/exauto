@@ -900,16 +900,15 @@ display: none;
 div#slider figure { 
 display:none;
 }
+
 .car{
 display:block;
 }
 
+/* the two codes below stops the front page testimonials from being viewed on certain devices. i made it so becuase i wanted the front page to be less busy as possible when viewers viewed from smaller devices */
+
 #front{
 display:none;
-}
-
-.clients{
-display:block;
 }
 
 .show{
@@ -1390,19 +1389,13 @@ div#slider figure {
     -moz-animation-play-state: initial;
 
   }
+/* 
 
+the following codes below control the design for the testimonials on the testimonial page
+ */
 
 #testimonials{
- /* 
-width: 300px;
-    padding: 2px;
-    border: 2px solid;
-    margin: 25px;
-    height:300px;
-     color:#6a6a6a;
-     background-color:white;
-     text-align:center:
- */
+ 
      overflow:hidden;
        float:center;
        
@@ -1434,7 +1427,8 @@ overflow:hidden;
 }
  */
      
-    
+ 
+/* the code below controls the design for the testimonial on the front page  */   
  #front{
  width: 700px
     padding: 2px;
@@ -1454,6 +1448,7 @@ overflow:hidden;
     
     
      }
+/* this code controls the design for the heading of the testimonials on the front page and the two lines above and below it */
 
 .clients{
 
