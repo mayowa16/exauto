@@ -141,12 +141,16 @@ wp_reset_postdata();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 <div class="show">		
 <div class="clients">
 
-what our clients are saying
+<a :hover  href="http://phoenix.sheridanc.on.ca/~ccit2721/?page_id=1621">
+"what our customers are saying"
+</a>
 </div>
 </div>
+
 
 <div id="front">
 

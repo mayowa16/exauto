@@ -600,7 +600,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #505050 ;
+	color:#6a6a6a;
 }
 /* This code also controls the main header as well */
 a:visited {
@@ -615,7 +615,7 @@ The codes below control the color of the links throughout the page
 a:hover,
 a:focus,
 a:active {
-	color: #444444;
+	color: #6a6a6a;
 }
 
 a:focus {
@@ -1405,6 +1405,7 @@ width: 300px;
  */
      overflow:hidden;
        float:center;
+       
 }
 
 #testimonials .client-contact-info{
@@ -1451,12 +1452,13 @@ overflow:hidden;
     text-align:center;
     border-radius:10px;
     
+    
      }
 
 .clients{
 
 font-size:20px;
-font-style: italic;
+font-style: normal;
 text-align:center; 
   border-bottom: 1px solid white;
   border-top: 1px solid white;
@@ -1466,7 +1468,22 @@ height:auto;
 line-height: 30px;
 display:inline-block;
 margin-left:50px;
+text-decoration:none; 
+
+font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+text-shadow: 4px 2px #444444;
+ 
+}
+ 
+a {
+text-decoration:none;
+color:#6a6a6a;
 }
 
+a:hover {
+    color: #ffffff;
+   
+   
+}
 
 }
