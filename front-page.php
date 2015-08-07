@@ -37,25 +37,19 @@ All images used in the website and in the slider are all in the public domain
 
 </figure>
 </div>
-<div id="front">
-<?php wpb_display_testimonials(); ?>
-</div>
 
-
-<!-- 
-
-This  (image that has company logo) will be the only  thing to appear when viewed on particular devices. the slider will not appear so as not to be confusing<div class="car">
-<img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:500px;height:400px;"/>
+<!-- This  (image that has company logo) will be the only  thing to appear when viewed on particular devices. the slider will not appear so as not to be confusing -->
+<div class="car">
+<img src="<?php echo get_bloginfo('template_url') ?>/images/banner.jpg" style="width:500px;height:350px;"/>
 </div>
  
- --> 
+ 
 
 
 <div class="gridcontainer">
 
 
 
- -->
 
 <!-- 
 <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -101,7 +95,7 @@ $titlelength = 15; // Length of the post titles shown below the thumbnails
 $args=array (
 	'post_type' => 'post',
 	'posts_per_page' => 4,
-	'cat'=> 39
+	'cat'=> 192
 	);
 $the_query = new WP_Query($args);
 // The Loop
@@ -115,7 +109,7 @@ if($counter != $grids) :
 <div class="griditemleft">
 	<div class="postimage">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
-	</div><!~~ .postimage ~~>
+	</div><!-- .postimage -->
 	<h2 class="postimage-title">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 		<?php if (mb_strlen($post->post_title) > $titlelength)
@@ -123,7 +117,7 @@ if($counter != $grids) :
 		else { the_title(); } ?>
 		</a>
 	</h2>
-</div><!~~ .griditemleft ~~>
+</div><!-- .griditemleft -->
 </div>
 
 <?php
@@ -131,22 +125,6 @@ if($counter != $grids) :
 // Show the right hand side column
 elseif($counter == $grids) :
 ?>
-<div class="move">
-<div class="griditemright">
-	<div class="postimage">
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
-	</div><!~~ .postimage ~~>
-	<h2 class="postimage-title">
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php if (mb_strlen($post->post_title) > $titlelength)
-			{ echo mb_substr(the_title($before = '', $after = '', FALSE), 0, $titlelength) . ' ...'; }
-		else { the_title(); } ?>
-		</a>
-	</h2>
-</div>
-</div>
-<!~~ .griditemright ~~>
-
 
 
 <div class="clear"></div>
@@ -158,12 +136,22 @@ endwhile;
 wp_reset_postdata();
 ?>
 
-</div><!~~ .gridcontainer ~~>
+</div><!-- .gridcontainer -->
 </div>
-
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+<div class="show">		
+<div class="clients">
+
+what our clients are saying
+</div>
+</div>
+
+<div id="front">
+
+<?php wpb_display_testimonials(); ?>
+</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
